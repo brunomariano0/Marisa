@@ -1,29 +1,42 @@
-import React from 'react';
-import { MessageCircle } from 'lucide-react';
-import { motion } from 'framer-motion';
+import { FaWhatsapp } from 'react-icons/fa'; 
+import type { CSSProperties } from 'react';
 
 const WhatsAppButton = () => {
+  const phoneNumber = "5511994214921"; // Substitua pelo seu número (DDI + DDD + Número)
+  const message = "Olá! Gostaria de saber mais sobre seus serviços.";
+  
+  const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+
   return (
-    <motion.a
-      href="https://wa.me/5511999999999" 
+    <a
+      href={url}
       target="_blank"
       rel="noopener noreferrer"
-      initial={{ opacity: 0, scale: 0 }}
-      animate={{ opacity: 1, scale: 1 }}
-      transition={{ delay: 1, duration: 0.5 }}
-      whileHover={{ scale: 1.1 }}
-      className="fixed bottom-8 right-8 z-50 flex items-center justify-center w-16 h-16 bg-[#25D366] rounded-full shadow-lg hover:shadow-xl transition-shadow duration-300 group"
-      aria-label="Fale conosco no WhatsApp"
+      style={buttonStyle}
+      aria-label="Conversar no WhatsApp"
     >
-      <div className="absolute inset-0 rounded-full border-2 border-white/30 animate-ping opacity-75"></div>
-      <MessageCircle size={32} className="text-white fill-white" />
-      
-      {/* Tooltip */}
-      <span className="absolute right-full mr-4 bg-white px-4 py-2 rounded-lg shadow-md text-sm text-gray-800 font-medium whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
-        Fale Conosco
-      </span>
-    </motion.a>
+      <FaWhatsapp size={30} />
+    </a>
   );
+};
+
+const buttonStyle: CSSProperties = {
+  position: 'fixed',
+  width: '60px',
+  height: '60px',
+  bottom: '40px',
+  right: '40px',
+  backgroundColor: '#25d366',
+  color: '#FFF',
+  borderRadius: '50px',
+  textAlign: 'center',
+  fontSize: '30px',
+  boxShadow: '2px 2px 3px #999',
+  zIndex: 1000,
+  display: 'flex',
+  alignItems: 'center',
+  justifyContent: 'center',
+  textDecoration: 'none'
 };
 
 export default WhatsAppButton;

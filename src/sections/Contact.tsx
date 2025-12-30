@@ -1,6 +1,5 @@
-import React from 'react';
 import { motion } from 'framer-motion';
-import { Phone, Mail, MapPin } from 'lucide-react';
+import { Phone, Mail, MapPin, Send } from 'lucide-react';
 
 const Contact = () => {
   return (
@@ -20,12 +19,12 @@ const Contact = () => {
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
-            <span className="text-wedding-gold text-sm tracking-[0.2em] uppercase font-medium mb-4 block">Contato</span>
+            <span className="text-wedding-gold text-sm tracking-[0.2em] uppercase font-medium mb-4 block">Entre em Contato</span>
             <h2 className="text-4xl md:text-5xl font-serif text-wedding-charcoal mb-8 leading-tight">
-              Vamos realizar <br/> seu sonho?
+              Transforme seu <span className="text-wedding-gold">dia especial</span> em uma <br/> experiência inesquecível
             </h2>
             <p className="text-wedding-gray mb-12 text-lg font-light leading-relaxed max-w-md">
-              Estamos ansiosos para ouvir sua história. Entre em contato para agendar uma reunião exclusiva e conhecer nossa proposta.
+              Cada detalhe importa. Conte-nos sobre seus sonhos e vamos criar juntos o casamento dos seus sonhos. Agende uma consulta gratuita e descubra como podemos tornar realidade a cerimônia perfeita.
             </p>
 
             <div className="space-y-10">
@@ -45,7 +44,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <p className="text-xs text-wedding-gold font-bold uppercase tracking-widest mb-1">E-mail</p>
-                  <p className="text-xl text-wedding-charcoal font-serif">contato@marisaassessoria.com.br</p>
+                  <p className="text-xl text-wedding-charcoal font-serif">marisadiasassessoria@gmail.com</p>
                 </div>
               </div>
 
@@ -54,7 +53,7 @@ const Contact = () => {
                   <MapPin size={24} strokeWidth={1} />
                 </div>
                 <div>
-                  <p className="text-xs text-wedding-gold font-bold uppercase tracking-widest mb-1">Atelier</p>
+                  <p className="text-xs text-wedding-gold font-bold uppercase tracking-widest mb-1">Endereço</p>
                   <p className="text-xl text-wedding-charcoal font-serif">Av. Paulista, 1000 <br/> São Paulo, SP</p>
                 </div>
               </div>
@@ -67,8 +66,11 @@ const Contact = () => {
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
-            className="bg-white p-10 md:p-14 shadow-[0_20px_50px_rgba(0,0,0,0.05)] border border-wedding-sand"
+            className="bg-gradient-to-br from-white to-wedding-sand/20 p-10 md:p-14 shadow-[0_20px_50px_rgba(0,0,0,0.1)] border border-wedding-sand rounded-lg relative overflow-hidden"
           >
+            <div className="absolute top-4 right-4 text-wedding-gold/20">
+              <Mail size={40} />
+            </div>
             <form className="space-y-8">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                 <div className="relative">
@@ -96,7 +98,8 @@ const Contact = () => {
                 <label htmlFor="message" className="absolute left-0 -top-3.5 text-xs text-wedding-gray transition-all peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400 peer-placeholder-shown:top-2 peer-focus:-top-3.5 peer-focus:text-xs peer-focus:text-wedding-gold">Conte um pouco sobre seu evento</label>
               </div>
 
-              <button type="submit" className="w-full bg-wedding-charcoal text-white font-light py-4 px-6 hover:bg-wedding-gold transition-colors duration-500 uppercase tracking-[0.2em] text-sm mt-4">
+              <button type="submit" className="w-full bg-gradient-to-r from-wedding-charcoal to-wedding-gold text-white font-light py-4 px-6 hover:from-wedding-gold hover:to-wedding-charcoal transition-all duration-500 uppercase tracking-[0.2em] text-sm mt-4 flex items-center justify-center gap-2 shadow-lg hover:shadow-xl transform hover:-translate-y-1">
+                <Send size={18} />
                 Enviar Mensagem
               </button>
             </form>

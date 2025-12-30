@@ -1,6 +1,6 @@
-import React from 'react';
 import { motion } from 'framer-motion';
 
+import Equipe from '../assets/Equipe.jpg';
 const About = () => {
   return (
     <section id="about" className="py-32 bg-wedding-champagne overflow-hidden">
@@ -17,9 +17,9 @@ const About = () => {
           >
             <div className="relative z-10">
               <img 
-                src="https://images.unsplash.com/photo-1511285560982-1351cdeb9821?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" 
+                src={Equipe} 
                 alt="Equipe Marisa Assessoria" 
-                className="w-[85%] shadow-2xl"
+                className="w-[100%] rounded-lg shadow-lg object-cover border-4 border-wedding-gold"
               />
             </div>
             {/* Decorative Element */}

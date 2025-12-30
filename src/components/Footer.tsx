@@ -1,8 +1,9 @@
-import React from 'react';
+import { FaInstagram, FaFacebook, FaPinterest, FaTiktok } from 'react-icons/fa';
 
 const Footer = () => {
   return (
-    <footer className="bg-wedding-charcoal text-white py-20 border-t border-white/10">
+    <footer className="bg-gradient-to-t from-black via-wedding-charcoal to-wedding-charcoal text-white py-20 border-t border-white/10 relative overflow-hidden">
+      <div className="absolute inset-0 bg-gradient-to-br from-wedding-gold/5 via-transparent to-wedding-gold/5"></div>
       <div className="container mx-auto px-6 md:px-12">
         <div className="flex flex-col md:flex-row justify-between items-center md:items-start gap-12">
           
@@ -30,13 +31,21 @@ const Footer = () => {
             <div>
               <h4 className="text-wedding-gold text-xs uppercase tracking-widest font-bold mb-6">Social</h4>
               <ul className="space-y-4 text-sm font-light text-white/60">
-                <li><a href="#" className="hover:text-white transition-colors">Instagram</a></li>
-                <li><a href="#" className="hover:text-white transition-colors">Facebook</a></li>
-                <li><a href="#" className="hover:text-white transition-colors">Pinterest</a></li>
+                <li><a href="#" className="hover:text-wedding-gold transition-colors flex items-center gap-2"><FaInstagram size={16} /> Instagram</a></li>
+                <li><a href="#" className="hover:text-wedding-gold transition-colors flex items-center gap-2"><FaFacebook size={16} /> Facebook</a></li>
+                <li><a href="#" className="hover:text-wedding-gold transition-colors flex items-center gap-2"><FaTiktok size={16} /> TikTok</a></li>
               </ul>
             </div>
           </div>
 
+        </div>
+
+        <div className="mt-20 pt-12 border-t border-white/10 text-center">
+          <h3 className="text-2xl font-serif text-wedding-gold mb-4">Pronto para o seu dia especial?</h3>
+          <p className="text-white/60 mb-8 max-w-md mx-auto">Entre em contato e vamos criar juntos o casamento dos seus sonhos.</p>
+          <a href="#contact" className="inline-block bg-wedding-gold text-wedding-charcoal px-8 py-3 font-medium uppercase tracking-widest text-sm hover:bg-white transition-colors">
+            Fale Conosco
+          </a>
         </div>
 
         <div className="border-t border-white/5 mt-20 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-white/30 font-light">
