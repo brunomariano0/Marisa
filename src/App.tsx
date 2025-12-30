@@ -5,6 +5,7 @@ import Hero from './sections/Hero';
 import About from './sections/About';
 import Services from './sections/Services';
 import Gallery from './sections/Gallery';
+import Testimonials from './sections/Testimonials';
 import Contact from './sections/Contact';
 import Footer from './components/Footer';
 import WhatsAppButton from './components/WhatsAppButton';
@@ -19,6 +20,7 @@ const Home = () => (
       <Hero />
       <About />
       <Services />
+      <Testimonials />
       <Gallery />
       <Contact />
     </main>
