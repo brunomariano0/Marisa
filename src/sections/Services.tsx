@@ -1,4 +1,4 @@
-import React from 'react';
+
 import { motion } from 'framer-motion';
 import { Star, Clock, HeartHandshake } from 'lucide-react';
 

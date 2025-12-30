@@ -1,5 +1,5 @@
-import React, { useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
+import { useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { ArrowLeft, Calendar, MapPin, Users } from 'lucide-react';
 import Navbar from '../components/Navbar';
