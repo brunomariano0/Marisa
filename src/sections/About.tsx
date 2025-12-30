@@ -52,11 +52,11 @@ const About = () => {
 
             <div className="grid grid-cols-3 gap-8 mt-12 pt-12 border-t border-wedding-gold/20">
               <div className="text-center lg:text-left">
-                <span className="block text-4xl font-serif text-wedding-gold mb-2">10+</span>
+                <span className="block text-4xl font-serif text-wedding-gold mb-2">5+</span>
                 <span className="text-xs uppercase tracking-widest text-wedding-gray">Anos</span>
               </div>
               <div className="text-center lg:text-left">
-                <span className="block text-4xl font-serif text-wedding-gold mb-2">500+</span>
+                <span className="block text-4xl font-serif text-wedding-gold mb-2">100+</span>
                 <span className="text-xs uppercase tracking-widest text-wedding-gray">Eventos</span>
               </div>
               <div className="text-center lg:text-left">

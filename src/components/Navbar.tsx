@@ -59,7 +59,7 @@ const Navbar = () => {
     >
       <div className="container mx-auto px-6 md:px-12 flex justify-between items-center">
         <a href="/" className="flex items-center gap-2 group">
-           <span className={`text-2xl font-serif tracking-widest font-bold transition-colors duration-300 ${
+           <span className={`text-base font-serif tracking-widest font-bold transition-colors duration-300 ${
              scrolled ? 'text-wedding-charcoal' : 'text-white'
            }`}>
              MARISA ASSESSORIA
@@ -74,7 +74,7 @@ const Navbar = () => {
               key={link.name}
               href={link.href}
               onClick={(e) => handleNavigation(e, link.href)}
-              className={`text-sm tracking-[0.2em] uppercase font-light transition-all duration-300 hover:text-wedding-gold relative after:content-[''] after:absolute after:w-0 after:h-[1px] after:bottom-[-4px] after:left-0 after:bg-wedding-gold after:transition-all after:duration-300 hover:after:w-full ${
+              className={`text-base tracking-[0.2em]  font-light transition-all duration-300 hover:text-wedding-gold relative after:content-[''] after:absolute after:w-0 after:h-[1px] after:bottom-[-4px] after:left-0 after:bg-wedding-gold after:transition-all after:duration-300 hover:after:w-full ${
                 scrolled ? 'text-wedding-charcoal' : 'text-white/90'
               }`}
             >
@@ -84,7 +84,7 @@ const Navbar = () => {
           <a 
             href="#contact"
             onClick={(e) => handleNavigation(e, '#contact')}
-            className={`px-6 py-2 border text-sm tracking-widest uppercase transition-all duration-300 ${
+            className={`px-6 py-2 border text-base tracking-widest  transition-all duration-300 ${
               scrolled 
                 ? 'border-wedding-charcoal text-wedding-charcoal hover:bg-wedding-charcoal hover:text-white' 
                 : 'border-white text-white hover:bg-white hover:text-wedding-charcoal'
